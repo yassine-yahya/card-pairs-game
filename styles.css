@@ -1,0 +1,251 @@
+
+
+body {
+
+    background-color: #380404;
+    height: 100vh;
+    overflow-x: hidden; /* Hides horizontal content that exceeds the viewport */
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+
+.cardDivs{
+
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 320px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    background-color: #380404;
+
+}
+#instructions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 26px;
+    max-width: 400px;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+    margin:auto;
+}
+#header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgb(200, 201, 165);
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px black;
+    border-bottom: #350303 3px solid;
+    height: 120px;
+} 
+#header span{
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: #350303;
+}
+
+.card {
+  width: 80px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  color: #350303;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out, transform 0.5s ease-in-out;
+  position: relative;
+  background-color:rgb(200, 201, 165);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6), inset 0 0 10px rgba(255,255,255,0.2);
+  margin: 4px 4px;
+  border: 5px double #4e0808;
+  
+
+}
+
+.card.flipped {
+  background: linear-gradient(145deg, #2c2c2c, #111);
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.8), inset 0 0 15px rgba(255,255,255,0.1);
+}
+
+#resetButton {
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 150px;
+  margin:60px auto;
+  background-color: #4e0808;
+  color: white;
+  border: 1px solid rgb(209, 176, 176);
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+
+} 
+#resetButton:hover {
+    background-color: rgb(200, 201, 165);
+    color: #350303;
+    border: 1px solid rgb(200, 201, 165);
+}
+
+#winner{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:180px;
+    width: 150px;
+    margin:auto;
+    color: whitesmoke;
+    background-color: #4e0808;
+    text-shadow: 2px 2px 4px black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    border: brown 1px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeIn 2s ease-in-out forwards;
+}
+#winner p{
+    font-size:20px;
+    padding: 5px;
+}
+#winner span{
+    font-size: 30px;
+    ;
+}
+@media screen and (max-width: 421px) and (max-width: 768px) {
+    #header {
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 5px;
+}
+
+    #instructions {
+        font-size: 26px;
+    }
+
+    .card {
+        width: 60px;
+        height: 80px;
+        font-size: 32px;
+    }
+
+    #resetButton {
+        font-size: 14px;
+    }
+
+    #winner {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 561px) {
+  .cardDivs{
+
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 500px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    background-color: #380404;
+
+}
+
+    #instructions {
+        font-size: 26px;
+    }
+
+    .card {
+        width: 80px;
+        height: 100px;
+        font-size: 38px;
+    }
+
+    #resetButton {
+        font-size: 15px;
+    }
+
+    #winner {
+        font-size: 14px;
+    }
+    
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 20px;
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 0;
+    padding: 10px;
+    color: rgb(233, 219, 219);
+}
+#welcome-page{
+    display: block;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#welcome-image{
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;  
+    animation: fadeIn 5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0%   { opacity: 0; }
+    50%  { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+ 
+
+#main-game{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 3s ease-in-out forwards;
+
+}
+@keyframes fadeIn {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
