@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
             winnerMessage.style.display = "block";
         setTimeout(() => {
                 winnerMessage.style.display = "none";
-            }, 5000);
+            }, 10000);
         }
       }
     })
@@ -98,5 +98,5 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(() => {
   document.getElementById('welcome-page').style.display = 'none';
   document.getElementById('main-game').style.display = 'flex';
-}, 3000);
+}, 5000);
 });
