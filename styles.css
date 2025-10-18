@@ -222,7 +222,7 @@ footer{
     color: white;
     font-family: 'Times New Roman', Times, serif;
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
