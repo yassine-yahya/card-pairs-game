@@ -98,5 +98,5 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(() => {
   document.getElementById('welcome-page').style.display = 'none';
   document.getElementById('main-game').style.display = 'flex';
-}, 5000);
+}, 10000);
 });
